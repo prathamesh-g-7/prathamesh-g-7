@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Products</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="imgs/Logo_131x100.jpg" alt="" />
+      <img id="founder" src="imgs/ramesh-patil.jpg" alt="" />
+      <h1>Dhanwantari Distributors</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="Buy_product.html">Purchase Product</a>
+      <a href="structure.html">Structure</a>
+      <a href="contact_us.html">Contact Us</a>
+      <a href="about_us.html">About Us</a>
+    </nav>
+    <section>
+      <div>
+        <img class="slider-img" src="imgs/AyurvedaMedicines.jpg" alt="" />
+        <img class="slider-img" src="imgs/CosmeticCare.jpg" alt="" />
+        <img
+          class="slider-img"
+          src="imgs/OrganicFarming_RPS76_Granules.jpg"
+          alt=""
+        />
+        <img class="slider-img" src="imgs/Nutritionals.jpg" alt="" />
+        <img class="slider-img" src="imgs/OrganicFarming.jpg" alt="" />
+      </div>
+    </section>
+
+    <main>
+      <marquee behavior="" direction=""
+        >Fill Bellow Details to Order New Products. Your Name and Contact
+        Information Should be Correct While Filling Details. Login ID should be
+        your IBD login ID.</marquee
+      >
+
+      <div class="container">
+        <form method="post" autocomplete="off" name="google-sheet">
+          <h1>Purchase Products</h1>
+          <hr />
+          <p>
+            Name :
+            <input type="text" placeholder="Full Name" name="Name" required />
+          </p>
+          <p>
+            Mobile Number :
+            <input
+              type="number"
+              placeholder="Mobile No"
+              required
+              maxlength="10"
+              name="Mobile"
+            />
+          </p>
+          <p>
+            IBD Login ID:
+            <input
+              type="text"
+              required
+              placeholder="IBD login ID"
+              name="IBD ID"
+            />
+          </p>
+          <p>
+            Address :
+            <textarea
+              name="Address"
+              cols="30"
+              rows="5"
+              required>
+            </textarea>
+          </p>
+          <p>Date : <input type="date" name="Date"/ required></p>
+          <p>
+            Select Product :
+            <select name="Products" required>
+              <optgroup label="Ayurvedic Medicines">
+                <option>---select products---</option>
+              <option value="Arthorich Capsules">Arthorich Capsules</option>
+              <option value="Zymorich Capsules">Zymorich Capsules</option>
+              <option value="Ditoxifie Capsules">Ditoxifie Capsules</option>
+              <option value="Grinrich Capsules">Grinrich Capsules</option>
+              <option value="Habbicure Capsules">
+                Habbicure Nicotine Pastille
+              </option>
+              <option value="Immurich Capsules">Immurich Capsules</option>
+              <option value="Kardeorich Capsules">Kardeorich Capsules</option>
+              <option value="Madhuneel">Madhuneel Amrut Churna</option>
+              <option value="Nurayurich Capsules">Nurayurich Capsules</option>
+              <option value="Respirich Capsules">Respirich Capsules</option>
+              <option value="Orac-99k">Orac-99k Turmeric Lozenges</option>
+              <option value="Orthorich Oil">Orthorich Oil</option>
+              <option value="Platin Capsules">Platin Capsules</option>
+              <option value="Zymolax Powder">Zymolax Powder</option>
+              <option value="Lithorich Capsules">Lithorich Capsules</option>
+              </optgroup>
+
+              <optgroup label="Organic Farming">
+                <option >RPS 76 1/2 Liter</option>
+                <option >RPS 76 1 Liter</option>
+                <option >RPS76 Granules</option>
+                <option >RPS Florarich Liquid</option>
+                <option >RPS Immunorich</option>
+                <option >RPS Ryzaerich</option>
+                <option >Immunorich Ultra</option>
+                <option >Nemarich</option>
+                <option >RPS SoilGuard</option>
+                <option >Silcorich</option>
+                <option >Taporich</option>
+                <option >compost rich</option>
+              </optgroup>
+
+              <optgroup label="Cosmatic Care">
+                <option>Nourishing Cream</option>
+                <option>AloeVera After Shave Lotion</option>
+                <option>Bluemorpho Anti Dandruff Shampoo</option>
+                <option>Bluemorpho Body Lotion</option>
+                <option>BlueMorpho FaceCream</option>
+                <option>BlueMorpho FaceWash</option>
+                <option>Shower Gel</option>
+                <option>Green Tea Shampoo</option>
+                <option>Hair Color Black</option>
+                <option>Neem Turmeric FaceWash</option>
+                <option>Peach Olive Moisturising Cream</option>
+                <option>Perfume</option>
+              </optgroup>
+
+              <optgroup label="Nutritional">
+                <option >Protirich</option>
+                <option >Protirich W</option>
+                <option >Green Tea 90</option>
+                <option >Omegarich</option>
+                <option >Calrich D2 Max</option>
+                <option >Smrutirich</option>
+                <option >Carnico 10</option>
+                <option >Chocomunity</option>
+                <option >Dreamrich</option>
+                <option >LohRich</option>
+                <option >Magnorich Small</option>
+                <option >PanchTulsi</option>
+              </optgroup>
+
+            </select>
+            
+          </p>
+          <p>
+            Select Quantity :
+            <select name="Quantity" required>
+              <option>---select quantity---</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="8">9</option>
+              <option value="10">10</option>
+            </select>
+          </p>
+          <p>
+            Confirm Products :
+            <input type="text" placeholder="eg. 2 Ditoxifie Capsules" name="Products Description"/ required>
+          </p>
+
+            <button type="submit" name="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <a href="privacy_policy.html">Privacy Policy</a>
+      <a href="#">&copy; 2021 | Dhanwantari</a>
+    </footer>
+
+
+
+    
+    <script src="script.js" type="text/javascript"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx9UbeWx54p4oKpuUSPL3EVNGutGEwBZmWuRQ9By3155QKfn4tinG6X/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) =>
+            alert("Thanks for Contacting us..! We Will Contact You Soon...")
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  </body>
+</html>
