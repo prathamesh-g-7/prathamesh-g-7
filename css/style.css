@@ -508,6 +508,9 @@ textarea {
     display: block;
     text-align: left;
   }
+  .res-img-slide img{
+    height:180px;
+  }
 }
 
 @media screen and (max-width: 600px) {
