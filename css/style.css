@@ -59,9 +59,6 @@ nav a:hover {
   border: 2px solid green;
 }
 
-main {
-  /* text-align: center; */
-}
 .ayu {
   background-color: aquamarine;
   border: 1px solid rgb(136, 203, 235);
@@ -263,7 +260,7 @@ textarea {
 }
 
 .text-heading {
-  background-color: rgb(211, 120, 92);
+  background-color: rgb(216, 120, 11);
   padding: 5px;
   margin-right: 73em;
   margin-left: 2em;
@@ -286,9 +283,7 @@ textarea {
   border-radius: 8px;
   text-align: center;
 }
-#mission-div {
-  /* margin-left: 10em; */
-}
+
 #Vision-div {
   margin-left: 8em;
 }
@@ -490,25 +485,25 @@ textarea {
 /* media queries for responsiveness */
 
 @media screen and (max-width: 600px) {
-  nav a:not(:first-child) {
+  .topnav a:not(:first-child) {
     display: none;
   }
-  nav a.icon {
+  .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  nav.responsive {
+  .topnav.responsive {
     position: relative;
   }
-  nav.responsive a.icon {
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .nav.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
@@ -558,7 +553,7 @@ textarea {
     max-width: 500px;
     padding: 12px;
   }
-  #vision{
+  #vision,.text-heading{
       display: block;
       margin: 0 auto;
       max-width: 500px;
@@ -579,6 +574,9 @@ textarea {
     border-radius: 8px;
     text-align: center;
   }
+  #inner-div{
+    margin-right:60px;
+  }
   #outer-div{
       display: block;
   }
@@ -590,11 +588,7 @@ textarea {
     border-radius: 8px;
     text-align: center;
   }
-  #inner-div h4{
-      text-align: center;
-      padding: 0px;
-      margin: 8px;
-  }
+
   footer{
       display: flex;
   }
@@ -602,4 +596,95 @@ textarea {
     color: white;
     padding: 10px;
     text-decoration: none;
+  }
+  .text-heading{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  #company-info p {
+    border: 1px solid black;
+    margin: 10px;
+  }
+  .responsive-inner-div{
+    border: none;
+  }
+  .responsive-inner-div img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .responsive-inner-div-h4{
+    text-align: center;
+  }
+  .res-container{
+      background-color: #f2f2f2;
+      border: 4px solid lightgray;
+      border-radius: 8px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type=""],
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    .container h1 {
+      text-align: center;
+      color: rgb(207, 50, 110);
+    }
+    
+    .container button {
+      background-color: #4daea1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: large;
+    }
+    
+    .container button:hover {
+      background-color: rgb(247, 109, 59);
+    }
+
+
+
+    #products-heading{
+      font-size: medium;
+    }
+    .card-container{
+      display:block;
+    }
+    .card{
+      width: 100%;
+      margin: auto;
+    }
+    .card-data{
+      margin: 60px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+
+    .contact-info{
+      display: block;
+      margin: auto ;
+    }
+
+
+    #about-us{
+      display: block;
+    }
 }
