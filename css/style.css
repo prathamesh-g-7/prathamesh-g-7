@@ -578,12 +578,17 @@ textarea {
     text-align: center;
   }
   #inner-div{
-    margin-right:60px;
+    margin-right:50px;
+    padding: 10px;
+  }
+  #inner-div figcaption{
+    text-align:center;
+    margin-left: 60px;
   }
   #outer-div{
       display: block;
   }
-  #products-heading{
+  #products-heading,#heading-bar{
     margin-left: 4em;
     background-color: rgb(216, 120, 11);
     margin: 14px;
@@ -689,5 +694,21 @@ textarea {
 
     #about-us{
       display: block;
+    }
+
+
+
+
+    #img-outer-div{
+      display: block;
+      margin: auto;
+    }
+    .img-ineer-div img{
+      justify-content: center;
+      align-items: center;
+      max-width:265px;
+    }
+    .popup .content{
+      max-width:fit-content;
     }
 }

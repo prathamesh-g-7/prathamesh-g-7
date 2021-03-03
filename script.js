@@ -92,4 +92,10 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+
+  document.getElementById('myTopnav').style.position = "sticky";
 }
+
+// function displayTitle() {
+//   var title = document.getElementsByClassName('nav-title');
+// }
